@@ -61,3 +61,5 @@ for a in modified_board:
 # ....###~~~~~~~~~~~~#..
 # ....#~~~~~~~~~~~~###..
 # ....##############....
+
+I think your code is very clear!!
