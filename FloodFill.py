@@ -28,23 +28,24 @@ def flood_fill(input_board: List[str], old: str, new: str, x: int, y: int) -> Li
     # Implement your code here.
 
 
-    def hahaha (r,c):
+    def Pointtt (r,c):
         if input_board[r][c] != old:
             return None
         else:
             input_board[r] = input_board[r][:c] + new + input_board[r][c+1:]
 
             if r > 0:
-                hahaha(r-1,c)
+                Pointtt(r-1,c)
             if r + 1 < len(input_board):
-                hahaha(r+1,c)
+                Pointtt(r+1,c)
             if c > 0:
-                hahaha(r,c-1)
+                Pointtt(r,c-1)
             if c + 1 > len(input_board):
-                hahaha(r,c+1)
+                Pointtt(r,c+1)
 
-    hahaha(x,y)
+    Pointtt(x,y)
     return input_board
+
 
 
 modified_board = flood_fill(input_board=board, old=".", new="~", x=5, y=12)
